@@ -1,0 +1,11 @@
+# Exported from Render on 2024-04-21T20:08:59Z
+services:
+- type: web
+  name: jupyter:latest
+  runtime: image
+  image:
+    url: docker.io/tamilselvancinnaiyan/jupyter:latest
+  plan: free
+  region: oregon
+  dockerCommand: 'docker run --user root -it --rm -p 3000:3000 -e GRANT_SUDO=yes tamilselvancinnaiyan/jupyter:'
+version: "1"
